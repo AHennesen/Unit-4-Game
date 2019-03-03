@@ -7,7 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="assets/css/reset.css">
     <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css">
-    <script src="main.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+
 </head>
 <body>
     <h1>Crystal Collecter</h1>
@@ -16,10 +18,7 @@
         <p>There are four crustals below. By clicking on a crystal you will add a specific amount of points to your total score.</p>
         <p>The value of each crystal is hidden from you untill you click on it.</p>
         <p>Each time when the game starts, the game will change the values of each crystal.</p>
-    </div>
-    <div class="numberToGuess">
-        <p>0</p>
-    </div>
+  <h1>Number to Guess: <span id="number-to-guess"></span></h1>
     <div class="winLose">
         <p id="wins">0</p>
         <p id="losses">0</p>
@@ -33,5 +32,7 @@
     <div class="crystalTotal">
         <p>Your total score is: </p>
     </div>
+    <script src="assets/javascript/game.js"></script>
+
 </body>
 </html>
