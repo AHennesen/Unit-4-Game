@@ -12,7 +12,7 @@ var imgs = ["https://i.pinimg.com/originals/58/3d/8c/583d8c0fcc57e936b0a3257f2f3
 "https://wow.zamimg.com/uploads/screenshots/small/69902.jpg",
 "http://farm4.static.flickr.com/3073/3036157673_b51b1c65cb_o.png",
 "https://crystal-information.com/wp-content/uploads/2015/02/citrine-quartz-example-7.jpg",]
-
+// for loop to go through each img and assign class and random value and then append to the page.
 for (var i = 0; i < 4; i++) {
     var imageCrystal = $("<img>");
     imageCrystal.addClass("crystal-image");
