@@ -17,11 +17,17 @@ for (var i = 0; i < 4; i++) {
     var imageCrystal = $("<img>");
     imageCrystal.addClass("crystal-image");
     imageCrystal.attr("src", imgs[i]);
+    imageCrystal.attr("id", [i]);
     imageCrystal.attr("data-crystalvalue", Math.floor(Math.random() * 12) +1);
     $("#crystals").append(imageCrystal);
 }
 
-
+var randomNum = function (){
+    for (var x = 0; x < 4; x++){
+        var idName = "#"+ x;
+        $(idName).attr("data-crystalValue", Math.floor(Math.random() * 12) +1);
+    }
+}
 
 $(".crystal-image").on("click", function() {
     var crystalValue = ($(this).attr("data-crystalvalue"));
@@ -35,6 +41,7 @@ $(".crystal-image").on("click", function() {
         targetNumber = Math.floor(Math.random() * 120) + 19;
         $("#number-to-guess").text(targetNumber);
         counter = 0;
+        randomNum();
     }
     else if (counter >= targetNumber) {
         losses++;
@@ -42,5 +49,6 @@ $(".crystal-image").on("click", function() {
         targetNumber = Math.floor(Math.random() * 120) + 19;
         $("#number-to-guess").text(targetNumber);
         counter = 0;
+        randomNum();
       }
     });
