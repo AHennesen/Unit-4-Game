@@ -1,6 +1,30 @@
 /* style.css */
+* {
+    box-sizing: border-box;
+  }
+
 body {
     background-color: #eeeeee; 
+}
+.body-text{
+background-color: blanchedalmond;
+width: 752px;
+}
+
+.numGuess {
+    float: left;
+    background-color: aquamarine;
+    height: 81px;
+    width: 288px;
+    margin-bottom: 25px;
+}
+
+.winLoss {
+    background-color: aqua;
+    height: 81px;
+    width: 288px;
+    margin-left: 300px;
+    margin-bottom: 25px;
 }
 
 .crystal-image {
